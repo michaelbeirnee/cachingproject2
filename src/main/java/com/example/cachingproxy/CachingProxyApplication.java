@@ -15,7 +15,7 @@ public class CachingProxyApplication {
     //string args atore command-line arguments 
     public static void main(String[] args){
         for(String arg : args){
-            if(args.equals("--clear-cache")){
+            if(arg.equals("--clear-cache")){
                //call the static function in CacheService that edletes the cache file 
                 CacheService.clearCacheFile(); 
                 System.out.println("Cache file cleared"); 
